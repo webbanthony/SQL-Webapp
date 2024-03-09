@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column; /* Align items vertically */
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      text-align: center;
+      margin-top: 10px; /* Add some space between header and form */
+    }
+    
+    h1, h2, h3, p {
+      text-align: center;
+    }
+    
+    pre {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style the input fields and button */
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"],
+    input[type="reset"] {
+      margin: 5px;
+      padding: 8px;
+      width: 200px; /* Adjust the width as needed */
+    }
+
+  </style>
+</head>
+<body>
+  <h1 style='color: rgb(35, 187, 174);'>Project 4:</h1>
+  <h2 style='color: rgb(19, 36, 129);'>A Servlet/JSP-based Multi-Tiered Application Using a Tomcat Container</h2>
+  <h3 style='color: rgb(28, 67, 194);'>- User Authentication Page -</h3>
+  <p>Log in to continue:</p>
+  <form action="/project-4/LoginServlet" method ="post">
+    <input type="text" name="user" placeholder="Username">  
+    <br>
+    <input type="password" name="pass" placeholder="Password">
+    <br>
+    <input type="submit" value="Click to Authenticate">
+  </form>
+</body>
+</html>
